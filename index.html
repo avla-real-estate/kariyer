@@ -17,7 +17,7 @@
 <link rel="icon" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@400;600&family=Jost:wght@300;400;500;600&family=Noto+Kufi+Arabic:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--lac:#142A42;--alt:#D2BE99;--kir:#EDEBE4;--ink:#1d2733;--soft:#5b6673}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -51,10 +51,50 @@ li::before{content:"◆";position:absolute;left:0;color:var(--alt);font-size:12p
 .apply .cta{margin-top:14px}
 .small{font-size:14px;color:var(--soft)}
 .apply .small{color:#c9cfd6}
-footer{background:var(--lac);color:var(--alt);text-align:center;padding:30px 20px;font-size:13px;letter-spacing:.2em}
-footer img{width:200px;height:auto;display:block;margin:0 auto 14px}
 .l{display:none}.l.on{display:block}
 [lang=ar],[dir=rtl]{font-family:'Noto Kufi Arabic',Jost,sans-serif}
+
+.a19{--ink-deep:#0a1b34;--gold:#A88B55;--golda:#dec79c;--gold-bright:#dec79c;--orange:#F08025;--hook:#D9B65C;--serif:"Cormorant Garamond","Cormorant",Georgia,serif;font-family:Inter,Jost,sans-serif}
+.a19 .ftr{background:var(--ink-deep);color:rgba(255,255,255,.66);padding:52px 0 28px;font-size:14px;text-align:left}
+.a19 .ftr .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.a19 .ftr .cols{display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr;gap:28px 38px;padding-bottom:30px;border-bottom:1px solid rgba(201,182,138,.18)}
+.a19 .ftr h4{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 13px;font-weight:600;border:0;padding:0}
+.a19 .ftr a{color:rgba(255,255,255,.72);text-decoration:none}
+.a19 .ftr a:hover{color:var(--golda)}
+.a19 .ftr ul{list-style:none;margin:0;padding:0}
+.a19 .ftr li{margin-bottom:9px;padding:0}
+.a19 .ftr li::before{content:none}
+.a19 .ftr .fbrand{display:flex;flex-direction:column;gap:20px}
+.a19 .ftr .fkare{display:block;width:100%;max-width:160px;height:auto;margin:0;opacity:.9}
+.a19 .ftr .fsoc{display:flex;align-items:center;gap:13px;color:rgba(255,255,255,.62)}
+.a19 .ftr .fsoc a{display:grid;place-items:center;width:22px;height:22px;color:inherit;transition:color .2s}
+.a19 .ftr .fsoc a:hover{color:var(--golda)}
+.a19 .ftr .fsoc svg{width:19px;height:19px;display:block}
+.a19 .ftr .fsoc i{width:1px;height:14px;background:rgba(255,255,255,.22);display:block}
+.a19 .ftr .ofis{display:flex;flex-direction:column;gap:2px;margin-bottom:15px}
+.a19 .ftr .ofis .c{font-family:var(--serif);font-style:italic;font-size:18px;font-weight:500;color:#fff;line-height:1.2}
+.a19 .ftr .ofis .a{font-size:12.5px;line-height:1.55;color:rgba(255,255,255,.55);display:flex;flex-direction:column;gap:3px}
+.a19 .ftr .ofis .a i{font-style:normal;display:flex;align-items:baseline;gap:7px;font-size:11.5px;line-height:1.45}
+.a19 .ftr .ofis .a i:before{content:"";flex:0 0 3px;width:3px;height:3px;border-radius:50%;background:currentColor;opacity:.55;transform:translateY(-2px)}
+.a19 .ftr .ofis .a i.tel:before,.a19 .ftr .ofis .a i.kny:before{display:none}
+.a19 .ftr .ofis .a i.tel{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.12);font-size:12.5px;color:rgba(255,255,255,.78)}
+.a19 .ftr .ofis .a i.tel a:hover{color:var(--hook)}
+.a19 .ftr .ofis .a i.kny{margin-top:3px;font-size:11px;font-style:italic;color:rgba(255,255,255,.42)}
+.a19 .ftr li a.vurgu{color:var(--orange)}
+.a19 .ftr .bot{padding-top:21px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;font-size:12.5px;color:rgba(255,255,255,.42)}
+@media(max-width:900px){.a19 .ftr .cols{grid-template-columns:1fr 1fr}.a19 .ftr .fbrand{grid-column:1/-1}}
+@media(max-width:560px){.a19 .ftr .cols{grid-template-columns:1fr}}
+form.f{display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:start;margin-top:22px}
+form.f .w{grid-column:1/-1}
+form.f label{display:block;font-size:13px;letter-spacing:.04em;color:var(--alt);margin-bottom:5px}
+form.f input,form.f textarea{width:100%;padding:11px 12px;border:1px solid rgba(210,190,153,.45);background:rgba(255,255,255,.06);color:#fff;font:inherit;font-size:15px}
+form.f textarea{min-height:90px}
+form.f .dil{display:flex;flex-wrap:wrap;gap:8px 16px}
+form.f .dil label{display:flex;align-items:center;gap:6px;color:#fff;margin:0;font-size:14px}
+form.f .dil input{width:auto}
+form.f button{grid-column:1/-1;border:0;cursor:pointer;font:inherit}
+.durum{margin-top:14px;font-size:15px}
+@media(max-width:600px){form.f{grid-template-columns:1fr}}
 </style>
 <script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "wodsscl1c6");</script>
 </head>
@@ -62,7 +102,7 @@ footer img{width:200px;height:auto;display:block;margin:0 auto 14px}
 <div class="top"><span class="lang-switch"><button data-l="en" class="on">EN</button>/<button data-l="tr">TR</button>/<button data-l="ar">AR</button></span></div>
 
 <header class="hero">
-  <img class="logo" src="img/logo-kare.png" alt="Avla Real Estate">
+  <a href="https://www.avlarealestate.com/" aria-label="avlarealestate.com"><img class="logo" src="img/logo-kare.png" alt="Avla Real Estate"></a>
   <div class="kicker" data-t="kicker">We are hiring</div>
   <h1 data-t="h1">Golden Visa Consultant</h1>
   <div class="pill"><b>العربية</b><span data-t="pill">ARABIC-SPEAKING</span></div><br>
@@ -137,21 +177,88 @@ footer img{width:200px;height:auto;display:block;margin:0 auto 14px}
 </div>
 
 <section id="apply" class="apply">
-  <h2 data-t="ah">How to apply</h2>
-  <p data-t="ap">Send your CV to realestate@avla.com.tr with the subject “Golden Visa Consultant – Arabic”.</p>
-  <a class="cta" href="mailto:realestate@avla.com.tr?subject=Golden%20Visa%20Consultant%20%E2%80%93%20Arabic" data-t="ab">Send your CV</a>
+  <h2 data-t="ah">Join our team</h2>
+  <p data-t="ap">Fill in the form and our team will contact you. You can also send your CV to realestate@avla.com.tr.</p>
+  <form class="f" id="basvuru" novalidate>
+    <div><label data-t="f_ad">First name *</label><input name="firstname" required autocomplete="given-name"></div>
+    <div><label data-t="f_soyad">Last name *</label><input name="lastname" required autocomplete="family-name"></div>
+    <div><label data-t="f_mail">Email *</label><input name="email" type="email" required autocomplete="email"></div>
+    <div><label data-t="f_tel">Mobile phone (with country code) *</label><input name="mobilephone" type="tel" required autocomplete="tel" placeholder="+90 5xx xxx xx xx"></div>
+    <div><label data-t="f_sehir">City of residence</label><input name="city" autocomplete="address-level2"></div>
+    <div><label data-t="f_firma">Current company / agency</label><input name="company" autocomplete="organization"></div>
+    <div class="w"><label data-t="f_dil">Languages you speak</label><div class="dil">
+      <label><input type="checkbox" name="dil" value="FIH3WloLVYwaUGkehhAKk">العربية</label>
+      <label><input type="checkbox" name="dil" value="TsO5qjtu3FLDsQBUo7-NP">Türkçe</label>
+      <label><input type="checkbox" name="dil" value="4X7Tlx2rC92ZG9-EXuuPu">English</label>
+      <label><input type="checkbox" name="dil" value="VYz5MA9izT52klnZUoNex">Ελληνικά</label>
+      <label><input type="checkbox" name="dil" value="persian_fa">فارسی</label>
+      <label><input type="checkbox" name="dil" value="dxDvBPG9QbM05Mrd1ideG">中文</label></div></div>
+    <div class="w"><label data-t="f_tecrube">Real estate experience (years, roles, network)</label><textarea name="sales_experience__network__amp__status"></textarea></div>
+    <div class="w"><label data-t="f_neden">Why would you like to join Avla?</label><textarea name="message"></textarea></div>
+    <button class="cta" type="submit" data-t="ab">Send application</button>
+  </form>
+  <div class="durum" id="durum" aria-live="polite"></div>
   <p class="small" style="margin-top:16px" data-t="kv">Your application is used only for this recruitment and is not shared with third parties.</p>
 </section>
 </main>
 
-<footer><img src="img/logo-yatay.png" alt="Avla Real Estate">ISTANBUL · ATHENS · <a href="https://www.avlarealestate.com/">AVLAREALESTATE.COM</a></footer>
+<div class="a19"><footer class="ftr">
+  <div class="wrap">
+    <div class="cols">
+      <div class="fbrand">
+        <a href="https://www.avlarealestate.com/" aria-label="avlarealestate.com" style="display:block"><img class="fkare" src="img/avla-kare.png" alt="Avla Real Estate" width="512" height="512" loading="lazy" decoding="async"></a>
+        <div class="fsoc">
+          <a href="https://www.instagram.com/avla.real.estate/?hl=tr" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2zm5.1-2.1a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3z"/></svg></a>
+          <i></i>
+          <a href="https://www.facebook.com/Avla.Re" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06C2 17.08 5.66 21.24 10.44 22v-7.03H7.9v-2.91h2.54V9.84c0-2.52 1.49-3.92 3.78-3.92 1.09 0 2.24.2 2.24.2v2.48h-1.26c-1.24 0-1.63.78-1.63 1.58v1.89h2.77l-.44 2.91h-2.33V22C18.34 21.24 22 17.08 22 12.06z"/></svg></a>
+          <i></i>
+          <a href="https://www.linkedin.com/company/avla-real-estate/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.78 24h20.44C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+          <i></i>
+          <a href="https://www.youtube.com/@avlarealestate" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2c-.3-1-1.1-1.8-2.1-2.1C19.6 3.6 12 3.6 12 3.6s-7.6 0-9.4.5C1.6 4.4.8 5.2.5 6.2 0 8 0 12 0 12s0 4 .5 5.8c.3 1 1.1 1.8 2.1 2.1 1.8.5 9.4.5 9.4.5s7.6 0 9.4-.5c1-.3 1.8-1.1 2.1-2.1.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Çalışma Ofisleri</h4>
+        <div class="ofis"><span class="c">İstanbul</span><span class="a"><i>Kolektif House Moda · Kadıköy</i><i>Palladium Tower · Ataşehir</i><i>Marriott Şişli · Executive Lounge · Kat 32</i><i>InterContinental Taksim · Board Room 1 · Kat N</i><i class="tel"><a href="tel:+902164705381">+90 216 470 53 81</a></i></span></div>
+        <div class="ofis"><span class="c">Atina</span><span class="a"><i>Glyfada · Athens Riviera</i><i class="tel"><a href="tel:+905322822657">+90 532 282 26 57</a></i></span></div>
+        <div class="ofis"><span class="c">Dubai</span><span class="a"><i>RAKEZ Free Zone</i><i class="kny">Avla International Properties FZ-LLC</i></span></div>
+      </div>
+      <div>
+        <h4>Sayfalar</h4>
+        <ul>
+          <li><a href="https://gv.selection.avlarealestate.com/#sartlar" target="_blank" rel="noopener">Golden Visa şartları</a></li>
+          <li><a href="https://gv.selection.avlarealestate.com/#gv2026" target="_blank" rel="noopener">2026 tablosu ve gündem</a></li>
+          <li><a href="https://gv.selection.avlarealestate.com/#guvence" target="_blank" rel="noopener">Ödeme güvencesi</a></li>
+          <li><a href="https://gv.selection.avlarealestate.com/#portfoy" target="_blank" rel="noopener">Projeler</a></li>
+          <li><a href="https://gv.selection.avlarealestate.com/#kayit" target="_blank" rel="noopener" class="vurgu">Başvuru formu</a></li>
+          <li><a href="https://gv.selection.avlarealestate.com/#harita" target="_blank" rel="noopener">Portföy haritası</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Diğer Sayfalar</h4>
+        <ul>
+          <li><a href="https://yunanistan-golden-visa.avlarealestate.com/" target="_blank" rel="noopener">Golden Visa Programı</a></li>
+          <li><a href="https://gv.selection.avlarealestate.com/" target="_blank" rel="noopener">Golden Visa Selection</a></li>
+          <li><a href="https://guvenilir-cozum-ortaginiz.avlarealestate.com/" target="_blank" rel="noopener">M. Sami Akbeniz</a></li>
+          <li><a href="https://www.avlarealestate.com/property-status/golden-visa" target="_blank" rel="noopener">Tüm GV İlanları</a></li>
+          <li><a href="https://www.avlarealestate.com" target="_blank" rel="noopener">avlarealestate.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bot">
+      <span>© 2026 Avla Gayrimenkul A.Ş. · Tüm hakları saklıdır.</span>
+      <span>19 Eylül 2026 · InterContinental İstanbul</span>
+    </div>
+  </div>
+</footer></div>
 
 <script>
 var T={
 en:{kicker:"We are hiring",h1:"Golden Visa Consultant",pill:"ARABIC-SPEAKING",cta:"Apply now",ah:"How to apply",ap:"Send your CV to realestate@avla.com.tr with the subject “Golden Visa Consultant – Arabic”.",ab:"Send your CV",kv:"Your application is used only for this recruitment and is not shared with third parties."},
 tr:{kicker:"Ekibimize katılın",h1:"Golden Visa Danışmanı",pill:"ARAPÇA KONUŞAN",cta:"Hemen başvur",ah:"Nasıl başvurulur",ap:"Özgeçmişinizi “Golden Visa Consultant – Arabic” konusuyla realestate@avla.com.tr adresine gönderin.",ab:"Özgeçmişini gönder",kv:"Başvurunuz yalnız bu işe alım için kullanılır, üçüncü kişilerle paylaşılmaz."},
 ar:{kicker:"نحن نوظّف",h1:"مستشار التأشيرة الذهبية",pill:"ناطق بالعربية",cta:"قدّم الآن",ah:"طريقة التقديم",ap:"أرسل سيرتك الذاتية إلى realestate@avla.com.tr بعنوان “Golden Visa Consultant – Arabic”.",ab:"أرسل سيرتك الذاتية",kv:"تُستخدم بياناتك لهذا التوظيف فقط ولا تُشارك مع أي طرف ثالث."}};
-function setL(l){
+var EK={"en": {"ah": "Join our team", "ap": "Fill in the form and our team will contact you. You can also send your CV to realestate@avla.com.tr.", "ab": "Send application", "f_ad": "First name *", "f_soyad": "Last name *", "f_mail": "Email *", "f_tel": "Mobile phone (with country code) *", "f_sehir": "City of residence", "f_firma": "Current company / agency", "f_dil": "Languages you speak", "f_tecrube": "Real estate experience (years, roles, network)", "f_neden": "Why would you like to join Avla?", "ok": "Thank you. Your application has reached us; our team will contact you.", "err": "It could not be sent. Please try again or email realestate@avla.com.tr.", "eksik": "Please fill in the required fields (*)."}, "tr": {"ah": "Ekibimize katılın", "ap": "Formu doldurun, ekibimiz sizinle iletişime geçsin. Özgeçmişinizi realestate@avla.com.tr adresine de gönderebilirsiniz.", "ab": "Başvuruyu gönder", "f_ad": "Ad *", "f_soyad": "Soyad *", "f_mail": "E-posta *", "f_tel": "Cep telefonu (ülke koduyla) *", "f_sehir": "Yaşadığınız şehir", "f_firma": "Şu an çalıştığınız firma / ofis", "f_dil": "Konuştuğunuz diller", "f_tecrube": "Gayrimenkul deneyiminiz (yıl, görevler, çevre)", "f_neden": "Avla ekibine neden katılmak istiyorsunuz?", "ok": "Teşekkürler. Başvurunuz bize ulaştı; ekibimiz sizinle iletişime geçecek.", "err": "Gönderilemedi. Lütfen tekrar deneyin ya da realestate@avla.com.tr adresine yazın.", "eksik": "Lütfen zorunlu alanları (*) doldurun."}, "ar": {"ah": "انضم إلى فريقنا", "ap": "املأ النموذج وسيتواصل معك فريقنا. يمكنك أيضاً إرسال سيرتك الذاتية إلى realestate@avla.com.tr.", "ab": "أرسل الطلب", "f_ad": "الاسم *", "f_soyad": "اسم العائلة *", "f_mail": "البريد الإلكتروني *", "f_tel": "رقم الجوال (مع رمز الدولة) *", "f_sehir": "مدينة الإقامة", "f_firma": "الشركة / المكتب الحالي", "f_dil": "اللغات التي تتحدثها", "f_tecrube": "خبرتك العقارية (السنوات، المهام، شبكة العلاقات)", "f_neden": "لماذا ترغب في الانضمام إلى أفلا؟", "ok": "شكراً لك. وصلنا طلبك وسيتواصل معك فريقنا.", "err": "تعذّر الإرسال. يرجى المحاولة مرة أخرى أو مراسلتنا على realestate@avla.com.tr.", "eksik": "يرجى ملء الحقول المطلوبة (*)."}};for(var k in EK)for(var j in EK[k])T[k][j]=EK[k][j];var CUR='en';
+function setL(l){CUR=l;
  document.querySelectorAll('.l').forEach(function(e){e.classList.toggle('on',e.dataset.lang===l)});
  document.querySelectorAll('[data-t]').forEach(function(e){e.textContent=T[l][e.dataset.t]});
  document.querySelectorAll('.lang-switch button').forEach(function(b){b.classList.toggle('on',b.dataset.l===l)});
@@ -161,6 +268,22 @@ function setL(l){
 document.querySelectorAll('.lang-switch button').forEach(function(b){b.onclick=function(){setL(b.dataset.l)}});
 var q=(location.search.match(/lang=(en|tr|ar)/)||[])[1]||(navigator.language||'').slice(0,2);
 if(T[q])setL(q);
+
+document.getElementById('basvuru').addEventListener('submit',function(e){
+ e.preventDefault();var f=e.target,d=document.getElementById('durum');
+ var g=function(n){return (f.elements[n].value||'').trim()};
+ if(!g('firstname')||!g('lastname')||!/\S+@\S+\.\S+/.test(g('email'))||g('mobilephone').replace(/\D/g,'').length<7){d.textContent=T[CUR].eksik;return}
+ var fields=['firstname','lastname','email','mobilephone','city','company','sales_experience__network__amp__status','message'].filter(function(n){return g(n)}).map(function(n){return{name:n,value:g(n)}});
+ var dl=[].slice.call(f.querySelectorAll('input[name=dil]:checked')).map(function(x){return x.value});
+ if(dl.length)fields.push({name:'whic_of_these_languages_do_you_speak_',value:dl.join(';')});
+ fields.push({name:'hangi_mahallede',value:'Yunanistan'},{name:'jobtitle',value:'Ekip Adayı (Kariyer Formu)'});
+ var hc=(document.cookie.match(/hubspotutk=([^;]+)/)||[])[1];
+ var ctx={pageUri:location.href,pageName:document.title};if(hc)ctx.hutk=hc;
+ f.querySelector('button').disabled=true;
+ fetch('https://api.hsforms.com/submissions/v3/integration/submit/145141452/fe5816f6-0b51-43db-bd0b-e72222ff9675',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fields:fields,context:ctx})})
+ .then(function(r){if(!r.ok)throw 0;f.style.display='none';d.textContent=T[CUR].ok;try{clarity('event','kariyer_basvuru')}catch(x){}})
+ .catch(function(){d.textContent=T[CUR].err;f.querySelector('button').disabled=false});
+});
 </script>
 </body>
 </html>
